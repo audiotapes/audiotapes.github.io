@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1,width=device-width">
+	<title>Tapes - Apply</title>
+	<meta property="og:image" content="http://tapes.audio/tapesog.png" />
+	<link href='tapeicon.png' rel='icon'>
+  	<link href="https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:400" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  	<style>
+  		body div{width:92%; max-width:500px; margin:auto;}
+  		h1,h2,h3,h4,h5,h6{font-family:"Roboto Slab", Helvetica, Arial, sans-serif;}
+  		h3{font-size:20px; font-weight:400;}
+  		h1{font-size:35px; font-weight:400;}
+  		body{font-family:Roboto, sans-serif; font-weight: 300;}
+  		header{text-align:center;}
+  		header img{max-width:100%; display:block; margin-bottom:2em;}
+  		header h1{display:none;}
+  		iframe{max-width:calc(100% - 2em); display:block; margin:1em;}
+  		a{color:#000; text-decoration:underline;}
+  		main h3, main p{margin:.1em 0;}
+  	</style>
+
+</head>
+<body>
+<div>
+<header>
+	<h1>Tapes on UCC 98.3FM</h1>
+	<img src="tapelogo.png">
+	<h3>10am - 11am &amp; 7pm - 8pm on <a href="http://ucc983fm.rocks">UCC 98.3FM</a></h3>
+	<p>Every week, I make playlists for individual people on air.</p>
+	<p>Tell me about yourself, tell me a story, and I'll fill in the blanks.</p>
+</header>
+<main>
+	<h1>Application</h1>
+	<form action="https://formspree.io/me@colm.cf"
+      method="POST">
+        <h3>What do you want a playlist for?</h3>
+	    <input type="text" name="purpose" >
+
+      	<h3>What song can you not get enough of right now?</h3>
+	    <input type="text" name="song" >
+
+
+      	<h3>Tell me about yourself.</h3>
+      	<p>Maybe an interesting fact about you, or what brought you here.</p>
+	    <textarea name="about" class="materialize-textarea"></textarea>
+
+      	<h3>Tell me a story about yourself you like.</h3>
+      	<p>It can be anything; days, hours, seconds long. Pick something that stands out and is important to you.</p>
+	    <textarea name="story" class="materialize-textarea"></textarea>
+
+      	<h3>Anything you'd like to say to an audience?</h3>
+	    <input type="text" name="say" >
+
+      	<h3>Your phone number?</h3>
+      	<p>It'll stay anonymous; I'll just use this to text you if your episode comes up.</p>
+	    <input type="text" name="num" >
+
+	    <input type="hidden" name="_next" value="//colm.cf/tapes/done.html" />
+	    <input type="hidden" name="_subject" value="Tapes submission." />
+	    <input type="text" name="_gotcha" style="display:none" />
+	    <input type="submit" class="waves-effect waves-light btn grey lighten-2 black-text" value="Send">
+	</form>
+
+</main>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+</div>
+</body>
+</html>
